@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add your Expenses</title>
+</head>
+<style>
+    body{
+        margin-left:200px;
+        margin-right:400px;
+        background-color: white;
+    }
+    img{
+        width:500px;
+        height:400px;
+        background-size: cover;
+    }
+    .font{
+        font-size:19px;
+    }
+    .head{
+        font-family:'Gill Sans', 'Gill Sans MT',' Calibri', 'Trebuchet MS', sans-serif
+    }
+    .para{
+        font-size: 25px;
+    }
+    .par{
+        font-size: 18px;
+        margin-left: 10px;
+    }
+    .emoji{
+        width:50px;
+        height:50px;
+        border:2px solid lavender;
+        border-radius: 100px;
+        float:left;
+        margin-left: 10px;
+    }
+    .image{
+        width:900px;
+        height:150px;
+        background-color: lavender;
+        padding-top: 10px;
+        border-top:5px solid green;
+        border-bottom-left-radius:40px;
+    }
+    .text{
+        margin-left:20px;
+    }
+    .emoji2{
+        width:50px;
+        height:50px;
+        border:2px solid lavender;
+        border-radius: 100px;
+        margin-left: 10px;
+        float:left;
+    }
+    .emoji3{
+        width:50px;
+        height:50px;
+        border:2px solid lavender;
+        border-radius: 100px;
+        margin-left: 10px;
+        float:left;
+    }
+    .budget{
+        margin-left: 10px;
+        background-color: white;
+        border-top-color: 3px solid green;
+        border:1px solid black;
+        padding-left: 10px;
+        padding-bottom: 20px;
+        border-top: 9px solid green;
+        border-radius: 20px;
+    }
+    .necessity{
+        color:blueviolet;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    #underline{
+        width:880px;
+        height:0px;
+        border:1px solid black;
+    }
+    #start{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: green;
+        width:200px;
+        height:30px;
+        text-align: center;
+        padding-top: 20px;
+        color:white;
+    }
+    #start:hover{
+        border:3px solid black;
+        opacity: 0.7;
+    }
+    #btn{
+        cursor:pointer;
+    }
+    #save{
+        width:400px;
+        height:300px;
+        padding:15px;
+
+    }
+    .save{
+        width:1100px;
+        height:350px;
+       
+        border:2px solid black;
+
+    }
+    .save:hover{
+        background-color: rgb(239, 245, 247);
+    }
+    #div{
+        font-size:35px;
+        float: right;
+        margin-right:90px;
+    }
+    .next{
+        width:600px;
+        height:200px;
+        border:2px solid black;
+        padding-left: 15px;
+        margin-top: 35px;
+        margin-right: 100px;
+    }
+    .next1{
+        width:600px;
+        height:200px;
+        border:2px solid black;
+        margin-left: 150px;
+        margin-top: 35px;
+        padding-left: 15px;
+    }
+    .next:hover{
+        background-color: rgb(239, 245, 247);
+    }
+    .next1:hover{
+        background-color: rgb(239, 245, 247);
+    }
+    #two{
+        display:flex;
+        flex-direction: row;
+        height:220px;
+        width:1100px;   
+    }
+    .h3{
+        text-decoration: underline;
+    }
+    .footer{
+        background-color: rgb(196, 227, 237);
+        margin-top: 40px;
+        padding-left: 20px;
+        padding-top: 20px;
+        width:1080px;
+        height:850px;
+        background-image: url("https://img.freepik.com/free-photo/physical-paper-book-background-closeup_58702-6685.jpg?w=996&t=st=1699614830~exp=1699615430~hmac=017bff712181167d20b8b3f8f4f8782a3b174ebf7e13d8a08fa499616ab9b0ae");
+    }
+    .footer ul li a{
+        text-decoration: none;
+
+    }
+    .foot ul li{
+        list-style: none;
+        line-height: 1.8;
+    }   
+    #foote,#Low,#Mortgage{
+        float:left;   
+    } 
+    #Low{
+        padding-left:80px;
+    }
+    #Mortgage{
+        padding-left: 190px;
+    }
+    #navbar li{
+    float:left;
+    list-style-type:none;
+    padding:2px;
+    color:white;
+    padding:10px;
+    font-size:20px;
+}
+#box{
+    border:2px solid black;
+    border-radius:10px;
+    border-left-color:white;
+    border-right-color:white;
+    border-top-color:white;
+    height:50px;
+    position:sticky;
+    background-color:lavender;
+    top:3px;
+    width:1470px;
+}
+.btnn{
+    float:right;
+    margin:3px;
+    border:2px solid black;
+    border-radius:15px;
+    background-color:cadetblue;
+    height:25px;
+}
+#btn{
+    width:105px;
+}
+#btn1{
+    width:155px;
+}
+#box li{
+    color:black;
+    text-decoration:none;
+}
+#box li:hover{
+    border:2px solid cadetblue;
+    background-color:black;
+    color:white; 
+}
+body{
+    background-image: url("https://ecomexpress.in/_nuxt/track-shipment-bg.2ff3aeb0.png");
+    background-size:cover;
+    background-color:white;
+}
+.btnn a{
+    color:white;
+    text-decoration:none;
+}
+.btnn a:hover{
+    color:cadetblue;
+    background-color:white;
+}
+#navbar1 li{
+    float:left;
+    list-style:none;
+    margin:10px;
+    font-size:18px;
+}
+#navbar1 li a{
+    text-decoration:none;
+    color:black;  
+}
+#navbar1 li a:hover{
+    border:2px solid rgb(249, 249, 248);
+    border-bottom-color:black;
+}
+#boxx{
+    background-color:rgb(248, 248, 244);
+    width:1470px;
+    height:50px;
+    justify-content:center;
+    text-align:center;
+    position:fixed;
+}
+h1{
+    margin-top: 70px;
+}
+#one{
+    width:700px;
+    height:450px;
+}
+#box{
+    margin-left:-30%;
+    width:100vw;
+}
+#boxx{
+    margin-left:-18%;
+}
+#underline{
+    width:700px;
+}
+    </style>
+<body>
+    <div id="box">
+        <nav id="navbar">
+            <ul>
+                <li class="box1">Services</li>
+                <li class="box2">Company</li>
+                <li class="box3">MediaCenter</li>
+                <li class="box4">Career</li>
+                <li class="box5">Contact Us</b></li>
+            </ul></nav>
+            <button id="btn" class="btnn"><a href="#">For Customers</a></button>
+            <button id="btn1" class="btnn"><a href="#">For Partners</a></button>
+    </div>
+    <div id="boxx">
+        <nav id="navbar1">
+            <ul><li><a href="features.html" target="_blank">Features</a></li>
+                <li><a href="expensses.html" target="_blank">Add your expenses</a></li>
+                <li><a href="login.html" target="_blank">Login</a></li>
+                <li><a href="signin.html" target="_blank">Sign In</a></li>
+            </ul>
+        </nav>
+    </div>
+    <h1>How to Track Monthly Expenses in 6 Steps</h1>
+    <h3>When you start tracking expenses, you can separate your spending into three categories: needs, wants and savings.</h3>
+    <img id="one" src="https://www.nerdwallet.com/assets/blog/wp-content/uploads/2017/02/track-monthly-expenses-1920x1152.jpg"alt="image">
+    <p class="font">Tracking your spending on a regular basis can give you an accurate picture of where your money is going — and where you'd like it to go instead.</p>
+    <p class="font">Then, by using a budget, you can accurately account for all the bills you need to pay going forward. But before you start plugging numbers into a spreadsheet or app, take a minute to list out each of your monthly expenses.</p>
+    <h2>1. Check your account statements </h2>
+    <p class="font">Pinpoint your money habits by taking inventory of all of your accounts, including your checking account and all credit cards you have. Looking at your accounts will help you identify your spending patterns.</p>
+    <p class="font">Your spending will consist of both fixed expenses and variable expenses. Fixed expenses are less likely to change from month to month. They include mortgage or rent, utilities, insurance and debt payments. You'll have more room to adjust variable expenses like food, clothing and travel.</p>
+    <h2>2. Categorize your expenses</h2>
+    <p class="font"> Begin by grouping your expenses into different categories. Categorizing your expenses will help you not only track how much you're spending, but also see where your money is going.</p>
+    <p class="font">Some personal finance websites and credit cards automatically tag your purchases in categories like “department store” or “automotive” to help you identify themes.</p>
+    <p class="font">Another way to categorize your expenses is by breaking them down into needs, wants and savings/debts. This way of categorizing and tracking your expenses is known as the 50/30/20 budget, which you'll learn more about in the next step. </p>
+    <h2>3. Build your budget </h2>
+    <p class="font">After categorizing your expenses, the next step to consider is creating a budget. A budget can help you take actionable steps to reduce your spending where necessary. At NerdWallet, we recommend using the 50/30/20 budget. Divide your net income into three categories: 50% for needs, 30% for wants and 20% for savings.</p>
+    <p class="font">Sorting your expenses into needs and wants can help you organize your budget and prioritize spending, especially if you need to trim costs to make room for savings or debt repayment. Here is a breakdown of each category in the 50/30/20 budget. We also have a calculator below to help you run the numbers.</p>
+    <p class="para">Needs</p>
+    <p class="font">These are the expenses you cannot avoid like monthly bills. If you use the 50/30/20 budget, these should account for 50% of your spending. Necessities often include the following:</p>
+        <ul>
+            <li><p class="par">Housing: Mortgage or rent; homeowners or renters insurance; property tax (if not already in the mortgage payment).</p></li>
+            <li><p class="par">Transportation: Car payment, gas, maintenance and auto insurance; public transportation. </p></li>
+            <li><p class="par">Health care: Health insurance; out-of-pocket medical costs. </p></li>
+            <li><p class="par">Life insurance. </p></li>
+            <li class="par">Utilities: Electricity and natural gas; water; sanitation/garbage; internet; cell phone and/or landline. </li>
+            <li class="par">Groceries, toiletries and haircuts, and other essentials. </li>
+            <li class="par">Child care. </li>
+            <li class="par">Student loan payments; other minimum loan payments; child support or alimony payments.</li>
+        </ul>
+    <div class="image"><img class="emoji" src="https://tse2.mm.bing.net/th?id=OIP.0gDEzcwJcD6T3HC7_J0oXgHaHa&pid=Api&P=0&h=180" alt="image"><h3 class="text">Nerdy Tip</h3>
+    <p class="par">If you find your budget is way out of whack, look closely at those items you've classified as needs and consider negotiating, refinancing or downgrading.</p></div>
+    <p class="para">Wants</p>
+    <p class="font">These expenses may be harder to account for in a budget, as they don't always come with a set monthly fee. If you use the 50/30/20 budget, wants can account for up to 30% of your spending.</p>
+    <ul>
+        <li><p class="par">Clothing, jewelry, etc.</p></li>
+        <li><p class="par">Dining out, special meals in (steaks for the grill, etc.).</p></li>
+        <li><p class="par">Movie, concert and event tickets.</p></li>
+        <li><p class="par">Gym.</p></li>
+        <li><p class="par">Travel expenses (airline tickets, hotels, rental cars, etc.).</p></li>
+        <li><p class="par">Home decor.</p></li>
+    </ul>
+    <div class="image"><img class="emoji2"src="https://cdn.shopify.com/s/files/1/1061/1924/files/Nerd_with_Glasses_Emoji.png?9898922749706957214"alt="image">
+    <h3 class="text">Nerdy Tips</h3>
+    <p class="par">Scan your spending for the past few months to get a sense of what your wants are and how much you tend to spend on them. Have each adult in your household do the same if you're creating a family budget. This exercise gives you a realistic baseline. You can use what you’ve learned to make small changes in your spending over time.</p></div>
+    <p class="para">Savings and debt repayment</p>
+    <p class="font">This is the money you're putting toward your retirement, emergency fund and other savings, and using to pay down high-interest credit card and other "toxic" debt like payday loans. It also includes anything over the minimum payment on your "good debts" such as your student loans and mortgage. In the 50/30/20 budget, this should account for 20% of your income.</p> 
+    <ul>
+        <li><p class="par">Emergency Funds.</p></li>
+        <li><p class="par">Savings Account.</p></li>
+        <li><p class="par">Individual retirement account.</p></li>
+        <li><p class="par">Other Investments.</p></li4>
+        <li><p class="par">Credit Card Payments.</p></li5>
+        <li><p class="par">Extra payment for mortgage.</p></li>
+        <li><p class="par">Extra Payment for student loans.</p></li>
+    </ul>
+    <div class="image"><img class="emoji3" src="http://icons.iconarchive.com/icons/google/noto-emoji-smileys/1024/10091-nerd-face-icon.png"alt="image">
+    <h3 class="text">Nerdy Tips</h3>
+    <p class="par">If you pay off your credit cards in full each month, classify the expenses according to what you buy — groceries under needs, for example. However, if you maintain a balance and are accruing interest and fees, list payments beyond the minimum under debt repayment.</p>
+    </div>
+    <p class="head">Every few months, revisit your budget and adjust as necessary. Consider using a budget app to track your expenditures, saving time as you build momentum with your new budgeting habit.</p>
+    <br><h2>The 50/30/20 budget calculator</h2>
+    <div class="budget"><h1>The 50/30/20 budget</h1>
+    <p>A guide for allocating your dollars using the 50/30/20 rule</p><br>
+    <div id="underline"></div><br>
+    <p class="head">Monthly after tax-income(required)</p>
+    <input type="number" type="value">
+    <h2>How much you have for:</h2>
+    <p>Necessities</p>
+    <h2 class="necessity">$0</h2><br>
+    <p>Wants</p>
+    <h2 class="necessity">$0</h2><br>
+    <p>Savings and paying off debt</p>
+    <h2 class="necessity">$0</h2>
+    <h4>See your money in one place</h4>
+    <p>NerdWallet tallies up your expenses and shows you how much you're spending on things like food, bills, travel and more. Plus, we'll show you ways to save big.</p>
+    <div id="start" id="btn" onclick="s"><a href=""></a>Get Started-it's free</div>
+    </div>
+    <h2>4.Use budgeting or expense-tracking apps</h2>
+    <p class="font">Budgeting apps are designed for on-the-go money management, letting you allocate a certain amount of spendable income each month depending on what you're taking in and what you're paying out. These types of apps will work if you're willing to log your purchases, put in the time and stick to your budget.</p>
+    <p class="font">Depending on what you get out of it, a paid app may be worth the cost. You Need a Budget, for instance, is $99 a year or $14.99 a month (after a 34-day free trial), but it has appealing benefits, like its ability to sync transactions directly from your bank account and its option for live workshops with the company's support team.</p>
+    <h2>5. Explore other expense trackers</h2>
+    <p class="font">if you have a more complex financial situation, such as investments or a business, you might consider Quicken, which lets you import bank transactions and monitor your investments.</p>
+    <p class="font">Quicken offers desktop software with extensive budgeting and tracking features and also has a mobile tool: the Simplifi budgeting app. Subscriptions are billed annually and average monthly costs for the desktop software range from $3.49 for the "starter" version to $8.99 for the home and business edition.</p>
+    <h2>6. Identify room for change</h2>
+    <p class="font">As you track, be ready to make adjustment. Lowering the big fixed expenses in your life, like the cost of housing, vehicles and utilities, can make a significant impact on your budget. Beyind that, check out additional ways to save money that can give you some breathing room.</p>
+    <div class="save"><img id="save" src="https://www.techicy.com/wp-content/uploads/2018/12/How-could-you-save-money.jpg" alt="image">
+    <p id="div">How to Save Money Now(Before You<br>Really Need It)</p></div>
+    <div id="two"><div class="next"><p id="div">Budgeting 101: How to Budget Money</p></div>
+    <div class="next1"><p id="div">How much to Tip Just About Everyone</p></div></div>
+    <div class="footer">
+        <div id="foote">
+        <nav class="foot">
+        <ul>
+         <li><a href="#"><h3 class="h3">Banking</h3></a></li>
+        <li>Credit Score</li>
+        <li>Checking</li>
+        <li>Savings</li>
+        <li>Prepaid Debit Card</li>
+        <li>Money Transfer</li>
+        <li>CDs</li></ul>
+        </nav>
+        <nav class="foot">
+        <ul>
+        <li><a href="#"><h3 class="h3">Credit Cards</h3></a></li>
+        <li>Credit Card Basics</li>
+        <li>Student Credit Cards</li>
+        <li>Cash Back Credit Cards</li>
+        <li>Airline Credit Cards</li>
+        <li>Low Interest and No Fee Credit Cards</li></ul>
+            </nav>
+        </div>
+        <div id="Low">
+            <nav class="foot">
+            <ul>
+            <li><a href="#"><h3 class="h3">Financial Planning</h3></a></li>
+            <li>Paying off debt</li>
+            <li>College Savings</li>
+            <li>Making Money</li>
+        </ul>
+        </nav>
+        <nav class="foot">
+            <ul>
+                <li><a href="#"><h3 class="h3">Financial News</h3></a></li></ul></nav>
+        <nav class="foot">
+            <ul>
+                <li>
+                    <a href="#"><h3 class="h3">Insurance</h3></a></li>
+        <li>Auto Insurance</li>
+        <li>Homeowners Insurance</li>
+        <li>Life Insurance</li>
+        <li>Medicare</li>
+        <li>Renters Insurance</li>
+        <li>Pet Insurance</li>
+        </ul>
+        </nav>
+        <nav class="foot">
+            <ul>
+                <li><a href="#"><h3 class="h3">Investing</h3></a></li>
+                <li>Retirement Planning</li>
+                <li>Roth IRA</li>
+                <li>Estate Planning</li>
+                <li>Brokers</li>
+            </ul>
+        </nav>
+        <nav class="foot">
+            <ul>
+                <li>
+                    <a href="#"><h3 class="h3">Loans</h3></a>
+                </li>
+                <li>Auto Loans</li>
+                <li>Student Loans</li>
+            </ul>
+        </nav>
+        </div>
+        <div id="Mortgage">
+            <nav class="foot">
+                <ul>
+                    <li><a href="#"><h3 class="h3">Mortgage</h3></a></li>
+                    <li>Mortgage Rates</li>
+                    <li>Mortgage Process</li>
+                    <li>Homeownership</li>
+                    <li>Homeownership Costs</li>
+                    <li>Selling Your Homes</li>
+                    <li>Home Affordability</li>
+                    <li>Property Taxes</li>
+                </ul>
+            </nav>
+            <nav class="foot">
+                <ul>
+                    <li><a href="#"><h3 class="h3">Small Business</h3></a></li>
+                    <li>Running Your Business</li>
+                    <li>Small-Business Loans</li>
+                    <li>Business Credit Cards</li>
+                    <li>Small-Business Taxes</li>
+                    <li>Starting a Business</li>
+                </ul>
+            </nav>
+            <nav class="foot">
+                <ul>
+                    <li><a href="#"><h3 class="h3">Taxes</h3></a></li>
+                    <li>Income Taxes</li>
+                    <li>Investment Taxes</li>
+                    <li>Personal Taxes</li>
+                </ul>
+            </nav>
+            <nav class="foot">
+                <ul>
+                    <li><a href="#"><h3 class="h3">Travel</h3></a></li>
+                    <li>Vacation & Trip Planning</li>
+                    <li>Reward Optimizations</li>
+                    <li>Rental Cars</li>
+                    <li>Travel Insurance</li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+</html>
