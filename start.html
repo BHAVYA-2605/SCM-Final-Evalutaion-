@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expenss tracker</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .navbarbtn{
+            border:2px solid white;
+            border-radius:4px;
+            background-color:dimgrey;
+            color:white;
+            margin:5px;
+            width:70px;
+            height:27px;
+            text-align:center;
+            justify-content:center;
+        }
+        .navbarbtn a{
+            text-decoration:none;
+            color:white;
+            font-size:19px;
+        }
+        .navbar li,.navbarbtn{
+            float:right;
+        }
+        .navigation{
+            border:2px solid black;
+            border-radius:4px;
+            height:50px;
+        }
+        .navbarhead{
+            display:inline;
+            color:powderblue;
+            font-family:initial;
+            font-size:40px;
+        }
+        .navbar li{
+            list-style:none;
+            margin:1px;
+            margin-right:12%;
+            margin-left:-5%;
+            margin-top:-3%;
+            margin-bottom:10%;
+        }
+        .navbar li a{
+            text-decoration:none;
+            color:white;
+            font-size:19px;
+        }
+        .navbar li a:hover{
+            border:5px solid white;
+            border-radius:5px;
+            border-bottom-color:cadetblue;
+            border-radius:5px;
+            color:cadetblue;
+            background-color:aliceblue;
+        }
+        .navbarbtn a:hover{
+            color:darkcyan;
+        }
+        .navigation{
+            background:rgba(0,0,0,0.4);
+        }
+        .box{
+            float:right;
+            width:62%;
+            height:100%;
+            color:white;
+            margin-top:5%;
+        }
+        .para{
+            font-size:30px;
+        }
+        .head{
+            margin:5px;
+            font-size:50px;
+        }
+        .line{
+            border:2px solid white;
+            width:450px;
+            height:0px;
+            margin:10px;
+            margin-left:25%;
+            margin-top:5%;
+        }
+        body{
+            background-image:url("https://wallpapers.com/images/featured/black-and-blue-oj7gfgaiyvkm2d8u.jpg");
+            background-repeat:no-repeat;
+            background-size:cover;
+            position:absolute;
+        }
+        #start{
+            border:2px solid white;
+            border-radius:4px;
+            color:powderblue;
+            font-size:35px;
+            width:250px;
+            height:50px;
+            float:right;
+            margin-top:32%;
+            margin-right:20%;
+            justify-content:center;
+            text-align:center;
+        }
+        .startimg{
+            width:120px;
+            height:60px;
+            float:right;
+            margin-right:71%;
+            margin-bottom:10%;
+            margin-top:-4%;
+        }
+        #start a{
+            text-decoration:none;
+            color:powderblue;
+        }
+        #start a:hover{
+            color:burlywood;
+        }
+        .navigation .fa{
+            margin-right:5px;
+        }
+        .home-menu .hm1{
+            float:none;
+            margin-left:-40px;
+            margin-top:13px;
+            text-align:center;
+            border-bottom:1px solid white;
+        }
+        .home-menu{
+            display:none;
+            width:200px;
+        }
+        .navigation ul li{
+            position:relative;
+        }
+        .navigation ul li:hover .home-menu{
+            display:block;
+            position:absolute;
+            background-color:rgba(0,0,0,0.4);
+        }
+        .navigation ul li:hover .home-menu li a:hover{
+            background-color:black;
+            border:4px solid black;
+            border-radius:2px;
+            border-bottom-color:white;
+            color:aquamarine;
+        }
+        .startimg{
+            border:2px solid white;
+            border-radius:12px;
+            animation-name:box;
+            animation-duration:5s;
+            animation-iteration-count:5;
+            box-shadow:insert 0px 10px powderblue;
+        }
+        @keyframes box{
+            0%{
+                margin-top:0px;
+            }
+            25%{
+                margin-top:-80px;
+            }
+            50%{
+                margin-top:0px;
+            }
+            75%{
+                margin-top:-80px;
+            }
+            100%{
+                margin-top:0px;
+            }
+        }
+        .hey{
+            color:bisque;
+        }
+    </style>
+    </head>
+<body>
+    <div class="navigation">
+        <h1 class="navbarhead">Expense<span class="hey">Tracker</span></h1>
+        <btn class="navbarbtn"><a href="login.html">Log In</a></btn>
+        <btn class="navbarbtn"><a href="signin.html">Sign In</a></btn>
+        <nav class="navbar">
+            <ul>
+            <li class="navbox1"><a href="#"><i class="fa fa-user"></i>AboutUs</a>
+                <ul class="home-menu">
+                    <li class="hm1"><a href="#">About</a></li>
+                    <li class="hm1"><a href="#">Opputinities</a></li>
+                    <li class="hm1"><a href="#">Risks</a></li>
+                    <li class="hm1"><a href="#">Priority areas</a></li>
+                    <li class="hm1"><a href="#">Glossary</a></li>
+                </ul>
+            </li>
+            <li class="navbox2"><a href="#"><i class="fa fa-inr"></i>Pricing</a>
+                <ul class="home-menu">
+                    <li class="hm1"><a href="#">All articles</a></li>
+                    <li class="hm1"><a href="#">Partner case studies</a></li>
+                    <li class="hm1"><a href="#">Product news</a></li>
+                    <li class="hm1"><a href="#">Platform tips</a></li>
+                </ul>
+            </li>
+            <li class="navbox3"><a href="#"><i class="fa fa-clone"></i>Resources</a>
+                <ul class="home-menu">
+                    <li class="hm1"><a href="#">All articles</a></li>
+                    <li class="hm1"><a href="#">Bussiness tips</a></li>
+                    <li class="hm1"><a href="#">Articles tips</a></li>
+                </ul>
+            </li>
+            <li class="navbox4"><a href="#"><i class="fa fa-angellist"></i>Solutions</a>
+                <ul class="home-menu">
+                    <li class="hm1"><a href="#">All articles</a></li>
+                    <li class="hm1"><a href="#">Productivity tips</a></li>
+                    <li class="hm1"><a href="#">App tips</a></li>
+                    <li class="hm1"><a href="#">App tutorials</a></li>
+                </ul>
+            </li>
+            <li class="navbox5"><a href="#"><i class="fa fa-clone"></i>Survey</a>
+                <ul class="home-menu">
+                    <li class="hm1"><a href="#">All articles</a></li>
+                    <li class="hm1"><a href="#">Automation inspiration</a></li>
+                    <li class="hm1"><a href="#">Zapier tutorials</a></li>
+                    <li class="hm1"><a href="#">Zapier features guide</a></li>
+                    <li class="hm1"><a href="#">Customer stories</a></li>
+                </ul>
+            </li>
+            <li class="navbox6"><a href="front.html"><i class="fa fa-home"></i>Home</a>
+                <ul class="home-menu">
+                    <li class="hm1"><a href="#">All articles</a></li>
+                    <li class="hm1"><a href="#">Best apps</a></li>
+                    <li class="hm1"><a href="#">App of the day</a></li>
+                    <li class="hm1"><a href="#">App companions</a></li>
+                </ul>
+            </div></li>
+        </nav></ul>
+       </div>
+    <div class="box">
+    <h1 class="head">My Expense Tracker</h1>
+    <div class="line"></div>
+    <p class="para">Ever feel like you're throwing money away? Take control of your cashflow by logging what you've spent with this simple form.<br>Tip! You can connect this typeform to Google Sheets via the Connect panel to add up how much you spend every month.</p></div>
+    <btn id="start"><a href="front.html" target="_blank">Let's get started</a></btn>
+    <a href="front.html"><img class="startimg" src="https://hotemoji.com/images/dl/i/black-rightwards-arrow-emoji-by-twitter.png" alt="image"></a>
+</body>
+</html>
