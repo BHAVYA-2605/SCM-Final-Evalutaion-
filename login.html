@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<style>
+     body{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    img{
+        width:550px;
+        height:750px;
+        float: left;
+    }
+    .image{
+        margin-top:5px;
+        padding-left:0;
+        padding-top: 50px;
+        margin-left: 0px;
+        margin-top: 50px;
+    }
+    .head{
+        padding-top:0px;
+        margin-top:0px;
+        margin-left: 855px;
+    }
+    input{
+        border:1px solid gray;
+        border-radius:10px;
+        height:40px;
+        margin:5px;
+    }
+    input:hover{
+        border:3px solid pink;
+    }
+    .id{
+        padding-left: 10p;
+        padding-right: 120px;
+    }
+    .check{
+        float: left;
+    }
+    .account{
+        color:white;
+        background-color: black;
+        border:2px solid black;
+        border-radius: 30px;
+        width:400px;
+        height:60px;
+       margin: auto;
+        text-align: center;
+    }
+    .account:hover{
+        width:410px;
+        height:61px;
+        opacity: 0.8;
+    }
+    .sign{
+        margin-left:800px;
+        width:500px;
+        height:600px;
+        margin-top:60px;
+        border: 2px solid black;
+        padding-left:90px;
+    }
+    .mail{
+        width:350px;
+    }
+    #name{
+       display:flex;
+        margin-top: 20px; 
+        
+        width:430px;     
+    }
+    #navbar li a{
+    text-decoration:none;
+    color:black;
+}
+#navbar li a:hover{
+    border:2px solid white;
+    border-bottom-color:black;
+}
+.home-menu{
+    display:none;
+}
+#box li:hover .home-menu{
+    display:block;
+    position:absolute;
+    background-color:rgba(0,0,0,0.1);
+}
+#box li:hover .home-menu .hm1 a:hover{
+    border:2px solid rgba(0,0,0,0.1);
+    border-bottom-color:white;
+    color:lavender;
+}
+#box li:hover .home-menu .hm1{
+    float:none;
+    border-bottom:1px solid black;
+    margin-left:-39px;
+    z-index:-1;
+}
+#navbar li{
+    float:left;
+    list-style-type:none;
+    padding:2px;
+    color:white;
+    padding:10px;
+    font-size:20px;
+}
+#box{
+    border:2px solid black;
+    border-radius:10px;
+    border-left-color:white;
+    border-right-color:white;
+    border-top-color:white;
+    height:50px;
+    position:fixed;
+    background-color:lavender;
+    top:3px;
+    width:1450px;
+}
+.btnn{
+    float:right;
+    margin:3px;
+    border:2px solid black;
+    border-radius:15px;
+    background-color:cadetblue;
+    height:25px;
+}
+#btn{
+    width:105px;
+}
+#btn1{
+    width:155px;
+}
+#box li{
+    color:black;
+    text-decoration:none;
+}
+.btnn a{
+    color:white;
+    text-decoration:none;
+}
+.btnn a:hover{
+    color:cadetblue;
+    background-color:white;
+}
+.a{
+    border-top-right-radius:200px;
+    border-top-left-radius:1px;
+    border-bottom-left-radius:1px;
+    border-bottom-right-radius:200px;
+    font-family: papyrus,fantasy;
+    border:2px solid rgb(221, 218, 204);
+    width:800px;
+    margin-right:500px;
+    margin-top:147px;
+    text-align:center;
+    height:350px;
+    background-color:rgb(221, 218, 204);
+}
+.a .size{
+    font-size:19px;
+}
+#navbar1 li{
+    float:left;
+    list-style:none;
+    margin:10px;
+    font-size:18px;
+}
+#navbar1 li a{
+    text-decoration:none;
+    color:black;  
+}
+#navbar1 li a:hover{
+    border:2px solid rgb(249, 249, 248);
+    border-bottom-color:black;
+}
+#boxx{
+    background-color:rgb(248, 248, 244);;
+    width:1450px;
+    height:50px;
+    justify-content:center;
+    text-align:center;
+    position:fixed;
+}
+.acc{
+    padding-left: 10px;
+    float:left;
+}
+h4{
+   padding: 15px;
+}
+.account{
+    margin-left:-10px;
+}
+</style>
+<body>
+    <div id="box">
+        <nav id="navbar">
+            <ul>
+                <li class="box1"><a href="#">Services</a></li>
+                <li class="box2"><a href="#">Company</a></li>
+                <li class="box3"><a href="#">MediaCenter</a></li>
+                <li class="box4"><a href="#">Career</a></li>
+                <li class="box5"><a href="#">Contact Us</a></li>
+            </ul></nav>
+            <button id="btn" class="btnn"><a href="#">For Customers</a></button>
+            <button id="btn1" class="btnn"><a href="#">For Partners</a></button>  
+    </div>
+    <div id="boxx">
+        <nav id="navbar1">
+            <ul><li><a href="front.html" target="_blank">Home</a></li>
+                <li><a href="expensses.html" target="_blank">Add your expenses</a></li>
+                <li><a href="features.html" target="_blank">Features</a></li>
+                <li><a href="login.html" target="_blank">Login</a></li>
+                <li><a href="signin.html" target="_blank">Sign In</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="image">
+    <img src="https://th.bing.com/th/id/OIP.HiPkkM8UZ5BgGiY6qcchKAAAAA?pid=ImgDet&w=474&h=474&rs=1"alt="image"></div>
+    <h1 class="head">Connect your Google Account</h1>
+    <div class="sign">
+    <div id="name">
+    <h3 class="id">Name</h3><h3>Username</h3></div>
+    <input type="text">
+    <input type="text">
+    <h3>Email</h3><input class="mail" type="text">
+    <h3>Password</h3><input class="mail" type="password" placeholder="6+ characters"><br><br>
+    <input class="check" type="checkbox"><p>I agree with all the Terms and Conditions</p>
+    <div class="account"><h3>Create Account</h3></div>
+    <p class="acc">Already have an account?</p><a href="signin.html" target="_blank"><h4>Sign In</h4></a>
+    </div>
+    </body>
+    </html>
